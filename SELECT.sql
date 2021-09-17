@@ -20,3 +20,7 @@ SELECT nama_kolom FROM nama_tabel;
 
  /*menampilkan data berdasarkan nilai atribut gender*/
   SELECT * FROM person WHERE gender ='Male'; /* akan menampilkan semua data yang bernilai 'Male' */
+  SELECT * FROM person WHERE gender ='Male' AND country_of_birth = 'Indonesia'; /* akan menampilkan semua data yang bernilai 'Male' dan negara indonesia*/
+  SELECT * FROM person WHERE gender='Female' AND (country_of_birth='Indonesia' OR country_of_birth='Poland');
+  SELECT * FROM person WHERE gender='Female' AND (country_of_birth='Indonesia' OR country_of_birth='China') AND first_name='Tedman';
+  SELECT * FROM person WHERE gender='Female' AND (country_of_birth='Indonesia' OR country_of_birth='China') AND (first_name='Tedman' OR first_name='Alina');
